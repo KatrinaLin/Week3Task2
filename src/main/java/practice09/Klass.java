@@ -1,13 +1,12 @@
 package practice09;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 
 public class Klass {
 
     private int number;
     private Student leader;
-    private List<Student> classStudents;
+    private HashSet<Student> classStudents;
 
     public Klass(int number) {
         this.number = number;
@@ -24,7 +23,7 @@ public class Klass {
     public void appendMember (Student student) {
 
         if (classStudents == null) {
-            classStudents = new ArrayList<>();
+            classStudents = new HashSet<>();
         }
 
         classStudents.add(student);
