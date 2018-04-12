@@ -27,7 +27,7 @@ public class Klass {
 
         if (teachers != null && teachers.size() != 0) {
             teachers.stream()
-                    .forEach(t -> System.out.println("I am " + t.getName() + ". I know " + student.getName() + "has joined " + getDisplayName()));
+                    .forEach(t -> System.out.println("I am " + t.getName() + ". I know " + student.getName() + " has joined " + getDisplayName() + "."));
         }
     }
 
@@ -42,7 +42,7 @@ public class Klass {
 
         if (teachers != null) {
             teachers.stream()
-                    .forEach(t -> System.out.println("I am " + t.getName() + ". I know " + student.getName() + "become Leader of " + getDisplayName()));
+                    .forEach(t -> System.out.println("I am " + t.getName() + ". I know " + student.getName() + " become Leader of " + getDisplayName() + "."));
         }
     }
 
